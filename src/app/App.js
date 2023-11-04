@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from 'react';
+import React, {useLayoutEffect, useState} from 'react';
 
 const App = () => {
     const [random, setRandom] = useState(0)
-    useEffect(() => {
+    useLayoutEffect(() => {
         if (random === 0) {
             setRandom(Math.floor(Math.random() * 100))
         }
